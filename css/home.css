@@ -1,0 +1,188 @@
+div.home {
+	clear: both;
+	background-image: url("../img/somosSociales2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 768px;
+}
+div.home h2, div.home h1, div.home h3 {
+	clear: both;
+	color: #fff;
+	padding-left: 30px;
+	text-shadow: 2px 2px 5px #000
+}
+div.home h2 {
+	font-size: 5rem;
+	letter-spacing: 5px;
+	padding-top: 300px;
+}
+div.home h1 {
+	letter-spacing: 5px;
+	font-size: 6rem;
+}
+
+div.home h3 {
+	font-size: 1rem;
+	letter-spacing: 7px;
+	padding-top: 10px;
+}
+div.home ul {
+	margin-top: 30px;
+	padding-left: 30px;
+	list-style-type: none;
+}
+div.home ul li {
+	margin-right: 10px;
+	float: left;
+}
+div.home ul li a {
+	color:#fff;
+	text-decoration: none;
+	border-radius: 5px;
+	background-color: rgb(4,149,19);
+	padding: 10px;
+	transition: all 0.3s ease;
+}
+div.home ul li a:hover {
+	background-color: #044D95;
+}
+.noticias h1 {
+	font-size: 4rem;
+	color: rgb(4,149,19);
+	margin-left: 6.25%;
+	margin-bottom: 2%;
+	margin-top: 10%;
+}
+article {
+	background-color: #fff;
+	border: 2px solid rgb(4,149,19);
+	padding: 1.5%;
+	border-radius: 5px;
+	width: 25%;
+	margin-left: 6.25%;
+	margin-bottom: 5%;
+	float: left;
+}
+	article img {
+		width: 100%;
+	}
+	article h2 {
+		font-size: 2rem;
+		margin-bottom: 1%;
+	}
+	article h3 {
+		font-size: 0.8rem;
+		font-style: italic;
+		margin-bottom: 5%;
+	}
+	article p {
+		margin-bottom: 10%;
+	}
+	article a {
+		text-decoration:none;
+		color: #fff;
+		background-color: rgb(4,149,19);
+		border-radius: 5px;
+		padding: 2%;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		-ms-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;
+	}
+		article a:hover {
+			background-color: #044D95;
+			border-radius: 0px;
+		}
+.medios h1 {
+	font-size: 4rem;
+	color: rgb(4,149,19);
+	margin-left: 6.25%;
+	margin-bottom: 2%;
+	margin-top: 50%;
+}
+.medios ul {
+	list-style-type: none;
+	margin-left: 6.25%;
+}
+.medios ul li {
+	font-size: 1.5rem;
+	margin-bottom: 2%;
+}
+.medios ul li a {
+	color: #044D95;
+	text-decoration: none;
+}
+.medios ul li a:hover {
+	font-weight: bold;
+}
+.medios ul li span {
+	font-size: 2rem;
+	padding-right: 10px;
+}
+
+.calendario {
+ 	width: 100%;
+ 	margin:10% 0 00% 10%;
+ }
+.calendario img {
+	float: left;
+	width: 30%;
+	margin-right: 10%;
+}
+footer {
+	font-size: 1rem;
+	color: #fff;
+	background-color: rgb(4,149,19);
+	margin-top: 50%;
+	clear: both;
+}
+.datos {
+	float: left;
+	width: 50%;
+}
+footer p {
+	background-color: rgb(4,149,19);
+	padding: 5%;
+	width: 100%;
+}
+.socialMedia a {
+	line-height: 10rem;
+	font-size: 2rem;
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+.socialMedia a {
+	margin-right: 1%;
+}
+.socialMedia a:first-child {
+	margin-left: 20%;
+}
+.socialMedia a:hover {
+	color: #044D95;
+}
+p.lospepes{
+	line-height: 2rem;
+	text-align: center;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+p.lospepes a {
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+p.lospepes a:hover {
+	color: #044D95;
+}
