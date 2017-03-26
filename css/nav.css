@@ -14,7 +14,6 @@
 	margin: auto;
 }
 .menu ul li {
-	text-align: center;
 	line-height: 70px;
 	list-style-type: none;
 	float: left;
@@ -22,13 +21,26 @@
 	height: 70px;
 	display: block;
 }
+.menu ul li:hover {
+	font-weight: 600;
+}
 .menu ul li a {
 	font-family: Montserrat;
 	text-decoration: none;
 	color: rgb(25,35,75);
 }
 li.logo {
+	text-align: center;
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 70px;
+}
+ul li:nth-child(1){
+	text-align: center;
+}
+ul li:nth-child(2), ul li:nth-child(3) {
+	text-align: right;
+}
+ul li:nth-child(5),ul li:nth-child(6),ul li:nth-child(7) {
+	text-align: left;
 }
