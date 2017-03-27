@@ -3,6 +3,7 @@
 	padding: 0;
 	font-family: Montserrat;
 	font-size: 14px;
+	box-sizing: border-box;
 }
 @font-face {
 	font-family: Montserrat;
@@ -55,11 +56,25 @@ ul.subMenu {
 .subMenu > li {
 	list-style-type: none;
 	color: rgba(25,35,75);
-	width: 155px;
-	/*right: 45px;*/
+	width: 160px;
 }
-.subMenu > li:last-child {
+.subMenu a li {
+	list-style-type: none;
+}
+.subMenu a li.padding {
+	padding-top: 18px;
+}
+.subMenu > a:hover {
+	color:#fff;
+}
+.subMenu > a:last-child li {
 	border-radius: 0 0 4px 4px;
+}
+.subMenu > a:hover > li {
+	background-color: rgb(25,35,75);
+}
+.subMenu > a:hover {
+	background-color: rgb(25,35,75);
 }
 .subMenu > li:hover {
 	color: #fff;
@@ -81,6 +96,9 @@ li.academica .subMenu li {
 	height: 70px;
 	padding-right: 5px;
 }
+li.academica .subMenu li:nth-child(3), li.academica .subMenu li:nth-child(4){
+	line-height: 70px;
+}
 li.academica .subMenu li:nth-child(1), li.academica .subMenu li:nth-child(2){
 	line-height: 35px;
 }
@@ -89,15 +107,21 @@ li.investigacion .subMenu li, li.alumnos .subMenu li, li.docentes .subMenu li {
 	height: 70px;
 	padding-left: 5px;
 }
+li.investigacion ul.subMenu {
+	width: 200px;
+}
+li.investigacion ul.subMenu li {
+	width: 200px;
+}
 li.investigacion .subMenu li:nth-child(1) {
-	line-height: 17px;
+	line-height: 35px;
 	padding-top: 0.5px;
 }
 li.investigacion .subMenu li:nth-child(2) {
-	line-height: 23.3px;
+	line-height: 35px;
 }
 li.investigacion .subMenu li:nth-child(3) {
-	line-height: 35px;
+	line-height: 70px;
 }
 li.alumnos .subMenu li {
 	line-height: 70px;
