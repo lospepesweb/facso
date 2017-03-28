@@ -1,0 +1,87 @@
+* {
+	margin:0;
+	padding: 0;
+	font-family: Montserrat;
+	font-size: 14px;
+	box-sizing: content-box;
+}
+@font-face {
+	font-family: Montserrat;
+	src: url("../fonts/Montserrat-Regular.ttf");
+}
+nav.menu {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1040px;
+}
+nav.menu ul {
+	width: 100%;
+}
+nav.menu ul li {
+	line-height: 70px;
+	width: 155px;
+	height: 70px;
+	float: left;
+}
+nav.menu ul li.logo {
+	width: 70px;
+}
+.menu li {
+	list-style-type: none;
+}
+.menu a {
+	text-decoration: none;
+	color:rgb(25,35,75);
+}
+.menu a:hover {
+	font-weight: 600;
+}
+.unsj {
+	text-align: center;
+}
+.institucional, .academica {
+	text-align: right;
+}
+.institucional:hover > ul.subMenu, .academica:hover > ul.subMenu, .investigacion:hover > ul.subMenu, .alumnos:hover > ul.subMenu, .docentes:hover > ul.subMenu {
+	display: block;
+}
+.academica > ul.subMenu > a li{
+	width: 250px;
+	left: -95px;
+	position: relative;
+}
+nav.menu ul li.logo {
+	text-align: center;
+	width: 110px;
+}
+li.investigacion, li.alumnos, li.docentes {
+	text-align: left;
+}
+.investigacion > ul.subMenu > a li{
+	width: 325px;
+	position: relative;
+}
+.alumnos > ul.subMenu > a li, .docentes > ul.subMenu > a li{
+	width: 200px;
+	position: relative;
+}
+.subMenu {
+	display: none;
+}
+.subMenu a {
+	color: rgb(25,35,75);
+}
+.subMenu a:hover {
+	color: #fff;
+	font-weight: normal;
+}
+.subMenu a li {
+	background-color: #fff;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.subMenu a li:hover {
+	background-color: rgb(25,35,75);
+}
+.subMenu a li.borderRadius {
+	border-radius: 0 0 5px 5px;
