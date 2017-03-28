@@ -24,6 +24,11 @@ nav.menu ul li {
 	height: 70px;
 	float: left;
 }
+nav.menu ul li:hover {
+	font-weight: 600;
+}/*agregué esta linea para que se ponga 
+	bold en cualquier parte el li, no solo en el nombre*/
+
 nav.menu ul li.logo {
 	width: 70px;
 }
@@ -34,9 +39,9 @@ nav.menu ul li.logo {
 	text-decoration: none;
 	color:rgb(25,35,75);
 }
-.menu a:hover {
+/*.menu a:hover {
 	font-weight: 600;
-}
+}*/
 .unsj {
 	text-align: center;
 }
