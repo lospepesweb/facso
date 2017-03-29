@@ -12,9 +12,11 @@
 }
 .noticias h1 {
 	font-size: 48px;
+	text-align: center;
 	color: rgb(25,35,75);
-	width:95%;
-	margin: 25px auto;
+	width:100%;
+	margin-top: 125px;
+	margin-bottom: 50px;
 }
 a{
 	color:#000;
