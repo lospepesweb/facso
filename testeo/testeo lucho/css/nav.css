@@ -42,18 +42,26 @@ nav.menu ul li.logo {
 /*.menu a:hover {
 	font-weight: 600;
 }*/
-.unsj {
-	text-align: center;
-}
-.institucional, .academica {
+nav.menu ul li.unsj {
 	text-align: right;
+	width: 40px;
+	margin-left: 115px;
+}
+nav.menu ul li.institucional {
+	width: 115px;
+	margin-left: 40px;
+}
+nav.menu ul li.academica {
+	width: 95px;
+	margin-left: 40px;
+	margin-right: 20px;
 }
 .institucional:hover > ul.subMenu, .academica:hover > ul.subMenu, .investigacion:hover > ul.subMenu, .alumnos:hover > ul.subMenu, .docentes:hover > ul.subMenu {
 	display: block;
 }
 .academica > ul.subMenu > a li{
 	width: 250px;
-	left: -100px;
+	/*left: -100px;*/
 	position: relative;
 }
 nav.menu ul li.logo {
@@ -62,6 +70,23 @@ nav.menu ul li.logo {
 }
 li.investigacion, li.alumnos, li.docentes {
 	text-align: left;
+}
+nav.menu ul li.investigacion {
+	/*background-color: red;*/
+	width: 115px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+nav.menu ul li.alumnos {
+	/*background-color: red;*/
+	width: 75px;
+	margin-left: 20px;
+	margin-right: 40px;
+}
+nav.menu ul li.docentes {
+	/*background-color: red;*/
+	width: 80px;
+	margin-right: 80px;
 }
 .investigacion > ul.subMenu > a li{
 	width: 325px;
