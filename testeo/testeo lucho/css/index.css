@@ -6,3 +6,57 @@ section.home {
 	height: 768px;
 	clear: both;
 }
+section.noticias {
+	margin-bottom: 150px;
+}
+section.noticias h1 {
+	font-size: 48px;
+	font-weight: 200;
+	text-align: center;
+	letter-spacing: 3px;
+	color: rgb(25,35,75);
+	width:100%;
+	margin-top: 125px;
+}
+span.linea	{
+	margin-top:5px;
+	margin-bottom: 75px;
+	margin-left:47.5%;
+	margin-right:47.5% ;
+	float: left;
+	width: 5%;
+	height: 0px;
+	border:2px solid rgba(25,35,75,0.7);
+}
+div.noticia {
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	width: 20%;
+	float: left;
+}
+div.noticia h1.titulo {
+	font-size: 2.5rem;
+	text-align: left;
+	color: rgb(97,151,43);
+	height: 125px;
+	margin-top:2%;
+	overflow: hidden;
+}
+div.noticia h2.fecha {
+	font-style: italic;
+	font-weight: 200;
+	color: rgba(0,0,0,0.6);
+	margin: 5% 0;
+}
+span.intro {
+	display: block;
+	height: 115px;
+	overflow: hidden;
+}
+p.mas {
+	text-align: left;
+	margin-top: 5%;
+}
+p.mas a {
+	color: rgb(97,151,43);
+}
