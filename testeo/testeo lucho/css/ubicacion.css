@@ -1,0 +1,12 @@
+body{
+
+}
+.ubicacion {
+	background-color: rgb(140,145,165);
+}
+.ubicacion .mapa{
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	z-index: -1;
+}
