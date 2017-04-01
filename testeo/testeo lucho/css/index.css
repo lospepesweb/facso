@@ -42,7 +42,7 @@ div.noticia {
 div.noticia h1.titulo {
 	font-size: 2.5rem;
 	text-align: left;
-	color: rgb(97,151,43);
+	color: rgb(151,118,20);
 	height: 125px;
 	margin-top:2%;
 	overflow: hidden;
@@ -64,7 +64,7 @@ p.mas {
 }
 p.mas a {
 	text-decoration: none;
-	color: rgb(97,151,43);
+	color: rgb(151,118,20);
 }
 p.masNoticias {
 	margin-top:35%;

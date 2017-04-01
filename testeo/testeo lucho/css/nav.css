@@ -119,16 +119,30 @@ nav.menu ul li.docentes {
 
 footer {
 	background-color: rgba(25,35,75,1);
-	height: 200px;
+	height: 160px;
 }
 footer p {
 	font-size: 14px;
 	font-weight: 200;
 	text-align: center;
+	line-height: 25px;
 	color: #fff;
 	margin-left: 10%;
 	width: 80%;
 }
 p.primero {
+	padding-top: 25px;
+}
+p.ultimo{
 	padding-top: 10px;
+	padding-bottom: 25px;
+}
+
+a.pepes {
+	text-decoration: none;
+	color:#fff;
+}
+a.pepes:hover {
+	font-weight: 600;
+	color: rgb(140,145,165);
 }
