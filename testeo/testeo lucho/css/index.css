@@ -8,7 +8,9 @@ section.home {
 	clear: both;
 }
 
+
 /*Sección NOTICIAS*/
+
 section.noticias {
 	margin-bottom: 125px;
 }
@@ -72,8 +74,8 @@ p.masNoticias {
 a.masNoticias {
 	text-decoration: none;
 	color:#fff;
-	background-color: rgba(25,35,750,0.7);
-	padding: 5px;
+	background-color: rgb(50,71,151);
+	padding: 10px;
 	border-radius: 5px;
 	transition: all 0.2s ease;
 }
@@ -81,7 +83,9 @@ a.masNoticias:hover{
 	background-color: rgba(25,35,75,1);
 }
 
+
 /*Sección OTROS*/
+
 section.otros {
 	background-color: rgba(25,35,75,0.5);
 	height: 450px;
@@ -105,19 +109,4 @@ section.otros ul li p.imagen {
 section.otros ul li h1 {
 	margin-top: 5px;
 	text-align: center;
-}
-
-/*Footer*/
-footer {
-	background-color: rgba(25,35,75,1);
-	height: 200px;
-}
-footer p {
-	text-align: center;
-	color: #fff;
-	margin-left: 10%;
-	width: 80%;
-}
-p.primero {
-	padding-top: 10px;
 }

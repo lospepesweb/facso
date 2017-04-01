@@ -9,6 +9,9 @@
 	font-family: Montserrat;
 	src: url("../fonts/Montserrat-Regular.ttf");
 }
+
+/*Navegación*/
+
 nav.menu {
 	margin-top: 5px;
 	margin-left: auto;
@@ -27,9 +30,7 @@ nav.menu ul li {
 }
 nav.menu ul li:hover {
 	font-weight: 600;
-}/*agregué esta linea para que se ponga 
-	bold en cualquier parte el li, no solo en el nombre*/
-
+}
 nav.menu ul li.logo {
 	width: 70px;
 }
@@ -40,9 +41,6 @@ nav.menu ul li.logo {
 	text-decoration: none;
 	color:rgb(25,35,75);
 }
-/*.menu a:hover {
-	font-weight: 600;
-}*/
 nav.menu ul li.unsj {
 	text-align: right;
 	width: 40px;
@@ -62,7 +60,6 @@ nav.menu ul li.academica {
 }
 .academica > ul.subMenu > a li{
 	width: 250px;
-	/*left: -100px;*/
 	position: relative;
 	z-index: 9999999999999999999999999999;
 }
@@ -74,19 +71,16 @@ li.investigacion, li.alumnos, li.docentes {
 	text-align: left;
 }
 nav.menu ul li.investigacion {
-	/*background-color: red;*/
 	width: 115px;
 	margin-left: 20px;
 	margin-right: 20px;
 }
 nav.menu ul li.alumnos {
-	/*background-color: red;*/
 	width: 75px;
 	margin-left: 20px;
 	margin-right: 40px;
 }
 nav.menu ul li.docentes {
-	/*background-color: red;*/
 	width: 80px;
 	margin-right: 80px;
 }
@@ -118,3 +112,21 @@ nav.menu ul li.docentes {
 }
 .subMenu a li.borderRadius {
 	border-radius: 0 0 5px 5px;
+}
+
+
+/*Footer*/
+
+footer {
+	background-color: rgba(25,35,75,1);
+	height: 200px;
+}
+footer p {
+	text-align: center;
+	color: #fff;
+	margin-left: 10%;
+	width: 80%;
+}
+p.primero {
+	padding-top: 10px;
+}
