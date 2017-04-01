@@ -1,3 +1,4 @@
+/*Imagen principal*/
 section.home {
 	background-image: url(../img/fondo.jpg);
 	background-repeat: no-repeat;
@@ -6,20 +7,10 @@ section.home {
 	height: 768px;
 	clear: both;
 }
-section.home h1 {
-	background-color: blue;
-	font-size: 72px;
-	font-weight: 200;
-	line-height: 72px;
-	color: #fff;
-	text-shadow: 2px 2px 5px #000;
-	width: 50%;
-	height: 72px;
-	margin-top: 1000px;
-	padding-left: 20px;
-}
+
+/*Sección NOTICIAS*/
 section.noticias {
-	margin-bottom: 150px;
+	margin-bottom: 125px;
 }
 section.noticias h1 {
 	font-size: 48px;
@@ -70,5 +61,63 @@ p.mas {
 	margin-top: 5%;
 }
 p.mas a {
+	text-decoration: none;
 	color: rgb(97,151,43);
+}
+p.masNoticias {
+	margin-top:35%;
+	margin-left: 2.5%;
+	clear: both;
+}
+a.masNoticias {
+	text-decoration: none;
+	color:#fff;
+	background-color: rgba(25,35,750,0.7);
+	padding: 5px;
+	border-radius: 5px;
+	transition: all 0.2s ease;
+}
+a.masNoticias:hover{
+	background-color: rgba(25,35,75,1);
+}
+
+/*Sección OTROS*/
+section.otros {
+	background-color: rgba(25,35,75,0.5);
+	height: 450px;
+}
+section.otros ul {
+	width: 100%;
+}
+section.otros ul li {
+	list-style-type: none;
+	margin-top: 50px;
+	width: 25%;
+	float: left;
+}
+section.otros ul li a {
+	text-decoration: none;
+	color: rgb(25,35,75);
+}
+section.otros ul li p.imagen {
+	text-align: center;
+}
+section.otros ul li h1 {
+	margin-top: 5px;
+	text-align: center;
+}
+
+/*Footer*/
+footer {
+	background-color: rgba(25,35,75,1);
+	height: 200px;
+}
+footer p {
+	text-align: center;
+	color: #fff;
+	margin-left: 10%;
+	width: 80%;
+}
+p.primero {
+	padding-top: 10px;
 }
