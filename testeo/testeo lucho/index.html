@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/shake.css" />
 	<link rel="icon" type="image/png" sizes="16x16" href="img/logoS.png">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 	<script type="text/javascript">
 		function mensaje(){
 			alert("Este departamento no cuenta con un sitio propio.");
@@ -45,19 +46,19 @@
 			<li class="alumnos"><a href="#.">ALUMNOS</a>
 				<ul class="subMenu animated2 fadeIn">
 					<a href="#."><li>Ingresantes</li></a>
-					<a href="http://siu.facso.unsj.edu.ar/" target="_blank""><li>SIU Guaraní</li></a>
+					<a href="http://siu.facso.unsj.edu.ar/" target="_blank"><li>SIU Guaraní</li></a>
 					<a href="#."><li>Campus Virtual</li></a>
 					<a href="#."><li>Becas</li></a>
 					<a href="#."><li>Movilidad estudiantil</li></a>
-					<a href="#."><li class="borderRadius">Calendario Académico</li></a>
+					<a href="img/calendario.pdf" target="_blank"><li class="borderRadius">Calendario Académico</li></a>
 				</ul>
 			</li>
 			<li class="docentes"><a href="#.">DOCENTES</a>
 				<ul class="subMenu animated2 fadeIn">
-					<a href="#."><li>SIU Guaraní</li></a>
+					<a href="http://siu.facso.unsj.edu.ar/" target="_blank"><li>SIU Guaraní</li></a>
 					<a href="#."><li>Campus Virtual</li></a>
 					<a href="#."><li>Concursos</li></a>
-					<a href="#."><li class="borderRadius">Foja de servicios digitales</li></a>
+					<a href="http://www.facso.unsj.edu.ar/fojadigital/" target="_blank"><li class="borderRadius">Foja de servicios digitales</li></a>
 				</ul>
 			</li>
 		</ul>
@@ -106,8 +107,8 @@
 				<h1><a href="#.">Périodico de la FACSO</a></h1>
 			</li>
 			<li>
-				<p class="imagen"><a href="#."><img class="shake-little" src="img/radio.png"></a></p>
-				<h1><a href="#.">Radio Universidad</a></h1>
+				<p class="imagen"><a href="http://www.radio.unsj-cuim.edu.ar/bpg/default.asp" target="_blank"><img class="shake-little" src="img/radio.png"></a></p>
+				<h1><a href="http://www.radio.unsj-cuim.edu.ar/bpg/default.asp" target="_blank">Radio Universidad</a></h1>
 			</li>
 			<li>
 				<p class="imagen"><a href="#."><img class="shake-little" src="img/directorio.png"></a></p>
@@ -141,5 +142,22 @@
 		<p>CPA:J5402DCS | Teléfonos +54 - 0264 - 4231949/ 0314 /2516 - Interno Central 201</p>
 		<p class="ultimo">Desarrolado por <a href="http://www.lospepesweb.com" target="_blank" class="pepes">Los Pepes | WEB DEVELOPMENT<a></p>
 	</footer>
+<script>
+	$(document).ready(function(){
+		$('.ir-arriba').click(function(){
+			$('body, html').animate({
+				scrollTop: '0px'
+			}, 300);
+		});
+		$(window).scroll(function(){
+			if( $(this).scrollTop() > 0 ){
+				$('.ir-arriba').fadeIn(300);
+			} else {
+				$('.ir-arriba').fadeOut(400);
+			}
+		});
+	});
+</script>
+<span class="ir-arriba"></span>
 </body>
 </html>

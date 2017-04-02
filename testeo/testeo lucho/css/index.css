@@ -101,7 +101,7 @@ section.otros ul li {
 }
 section.otros ul li a {
 	text-decoration: none;
-	color: rgb(25,35,75);
+	color: rgb(0,0,0);
 }
 section.otros ul li p.imagen {
 	text-align: center;
@@ -109,4 +109,23 @@ section.otros ul li p.imagen {
 section.otros ul li h1 {
 	margin-top: 5px;
 	text-align: center;
+}
+
+.ir-arriba {
+    display: none;
+    background-color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-image: url(../img/flecha-top.png);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px;
+    z-index: 1000;
+}
+
+.ir-arriba {
+    z-index: 9999 !important;
 }
