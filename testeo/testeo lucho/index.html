@@ -6,12 +6,27 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/nav.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<link rel="stylesheet" type="text/css" href="css/shake.css" />
+	<link rel="stylesheet" type="text/css" href="css/shake.css">
+	<link rel="stylesheet" type="text/css" href="css/sweetalert2.css">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/logoS.png">
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script src="js/sweetalert2.js"></script>
 	<script type="text/javascript">
 		function mensaje(){
-			alert("Este departamento no cuenta con un sitio propio.");
+			swal({
+  				title: '<span class="informa_titulo">Sin sitio</span>',
+  				/*imageUrl: 'img/thumbs-up.jpg',
+  				imageWidth: 300,
+  				imageHeight: 300,*/
+  				html: $('<div>')
+    				.addClass('informa_texto')
+    				.text('Este departamento no cuenta con sitio web propio.'),
+  				animation: false,
+  				customClass: 'animated2 fadeIn',
+  				showCloseButton: true,
+  				buttonsStyling: false,
+  				confirmButtonClass: 'boton-confirma'
+				});
 		}
 	</script>
 </head>
