@@ -7,10 +7,37 @@ section.home {
 	height: 768px;
 	clear: both;
 }
-
+div.sociales {
+	position: absolute;
+	animation-delay: 0.5s;
+}
+div.sociales p {
+	font-size: 60px;
+	text-shadow: 2px 2px 3px #000;
+	color: #fff;
+	top: 400px;
+	margin-left: 25px;
+	width: 100%;
+	position: relative;
+	animation-delay: 0.5s;
+}
+div.sociales a {
+	background-color: rgba(25,35,75,1);
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	top: 425px;
+	padding: 10px;
+	margin-left: 25px;
+	border-radius: 5px;
+	position: relative;
+}
+div.sociales a:hover {
+	background-color: rgba(28,60,98,1);
+}
 
 /*Sección NOTICIAS*/
-
 section.noticias {
 	margin-bottom: 125px;
 }
@@ -85,7 +112,6 @@ a.masNoticias:hover{
 
 
 /*Sección OTROS*/
-
 section.otros {
 	background-color: rgba(25,35,75,0.5);
 	height: 450px;
