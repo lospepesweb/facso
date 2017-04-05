@@ -1,41 +1,10 @@
-
-/*section.carreras{
-	background-color:rgb(242,242,242);
-	clear: both;
-}
-section.carreras h1 {
-	font-size: 48px;
-	font-weight: 200;
-	text-align: center;
-	letter-spacing: 3px;
-	color: rgb(25,35,75);
-	width:100%;
-	padding-top: 75px;
-}
-span.linea	{
-	margin-top:5px;
-	margin-bottom: 75px;
-	margin-left:47.5%;
-	margin-right:47.5% ;
-	float: left;
-	width: 5%;
-	height: 0px;
-	border:2px solid rgba(25,35,75,0.7);
-}*/
-section.carreras{
-    background-color:rgb(242,242,242);
-    height: 580px;
-    padding-top: 75px;
-}
-
-
 section.imagen {
     background-image: url("../img/carreras2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 200px;
-    /*margin-bottom: 75px;*/
+    margin-bottom: 75px;
     clear: both;
 }
 section.imagenCarreras {
