@@ -29,6 +29,7 @@ span.linea  {
     position: relative;
     height: 0px;
     border:2px solid rgb(255,255,255);
+    box-shadow: 2px 2px 5px #000;
 }
 section.carreras{
     background-color: rgb(242,242,242);
@@ -52,7 +53,7 @@ section.carreras{
     font-size: 20px;
     font-weight: 300;
     background: rgb(242,242,242);
-    color: rgb(151,118,20);
+    color: rgb(25,35,75);
     text-decoration: none;
 }
 .carrera-nombre.open {
@@ -60,7 +61,7 @@ section.carreras{
     color: #fff;
 }
 .carrera-nombre:hover {
-    background: rgba(25,35,75,0.5);
+    background: rgba(25,35,75,0.1);
     color:#000;
 
 }
