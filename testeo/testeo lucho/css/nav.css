@@ -16,6 +16,7 @@ nav.menu {
 	margin-left: auto;
 	margin-right: auto;
 	width: 1040px;
+	clear: both;
 }
 nav.menu ul {
 	width: 100%;
@@ -26,7 +27,7 @@ nav.menu ul li {
 	height: 70px;
 	float: left;
 	position: relative;
-	z-index: 9999999999999999999999999999;
+	z-index: 1;
 }
 nav.menu ul li:hover {
 	font-weight: 600;
@@ -121,6 +122,7 @@ nav.menu ul li.docentes {
 footer {
 	background-color: rgba(25,35,75,1);
 	height: 160px;
+	clear: both;
 }
 footer p {
 	font-size: 14px;

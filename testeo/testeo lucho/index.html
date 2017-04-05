@@ -11,24 +11,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="img/logoS.png">
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 	<script src="js/sweetalert2.js"></script>
-	<script type="text/javascript">
-		function mensaje(){
-			swal({
-  				title: '<span class="informa_titulo">Sin sitio</span>',
-  				/*imageUrl: 'img/thumbs-up.jpg',
-  				imageWidth: 300,
-  				imageHeight: 300,*/
-  				html: $('<div>')
-    				.addClass('informa_texto')
-    				.text('Este departamento no cuenta con sitio web propio.'),
-  				animation: false,
-  				customClass: 'animated2 fadeIn',
-  				showCloseButton: true,
-  				buttonsStyling: false,
-  				confirmButtonClass: 'boton-confirma'
-				});
-		}
-	</script>
+	<script src="js/app.js"></script>
 </head>
 <body>
 	<nav class="menu">
@@ -44,17 +27,17 @@
 				<ul class="subMenu animated2 fadeIn">
 					<a href="https://dptocomunicacionunsj.wordpress.com/" target="_blank"><li>Depto. de Cs. de la Comunicación</li></a>
 					<a href="https://cienciaseconomicasunsj.jimdo.com/" target="_blank"><li>Depto. de Cs. Económicas</li></a>
-					<a href="#." onclick="mensaje()"><li>Depto. de Cs. Jurídicas</li></a>
-					<a href="#." onclick="mensaje()"><li>Depto. de Cs. Políticas</li></a>
+					<a href="#." onclick="DeptoSinWeb()"><li>Depto. de Cs. Jurídicas</li></a>
+					<a href="#." onclick="DeptoSinWeb()"><li>Depto. de Cs. Políticas</li></a>
 					<a href="http://www.facso.unsj.edu.ar/dep_sociologia/index.html" target="_blank"><li>Depto. de Sociologia</li></a>
-					<a href="#." onclick="mensaje()"><li class="borderRadius">Depto. de Trabajo Social</li></a>
+					<a href="#." onclick="DeptoSinWeb()"><li class="borderRadius">Depto. de Trabajo Social</li></a>
 				</ul>
 			</li>
 			<li class="logo" title="Inicio"><a href="index.html"><img src="img/logoS.png" height="65px"></a></li>
 			<li class="investigacion"><a href="#.">INVESTIGACIÓN</a>
 				<ul class="subMenu animated2 fadeIn">
 					<a href="#."><li>Inst. de Investigaciones Administrativas Contables</li></a>
-					<a href="#."><li>Inst. de Investigaciones Socio Economicas</li></a>
+					<a href="#."><li>Inst. de Investigaciones Socio Económicas</li></a>
 					<a href="#."><li class="borderRadius">Gabinetes de Investigación</li></a>
 				</ul>
 			</li>
@@ -73,7 +56,7 @@
 					<a href="http://siu.facso.unsj.edu.ar/" target="_blank"><li>SIU Guaraní</li></a>
 					<a href="#."><li>Campus Virtual</li></a>
 					<a href="#."><li>Concursos</li></a>
-					<a href="http://www.facso.unsj.edu.ar/fojadigital/" target="_blank"><li class="borderRadius">Foja de servicios digitales</li></a>
+					<a href="http://www.facso.unsj.edu.ar/fojadigital/" target="_blank"><li class="borderRadius">Foja de Servicio Digital</li></a>
 				</ul>
 			</li>
 		</ul>
@@ -84,7 +67,7 @@
 		<div class="sociales animated fadeInUp">
 			<p>Facultad de Ciencias Sociales</p>
 			<a href="#.">Ingreso</a>
-			<a href="#.">Carreras</a>
+			<a href="html/carreras.html">Carreras</a>
 		</div>
 	</section>
 
@@ -128,7 +111,7 @@
 		<ul>
 			<li>
 				<p class="imagen"><a href="#."><img class="shake-little" src="img/news.png"><a/></p>
-				<h1><a href="#.">Périodico de la FACSO</a></h1>
+				<h1><a href="#.">Periódico de la FACSO</a></h1>
 			</li>
 			<li>
 				<p class="imagen"><a href="http://www.radio.unsj-cuim.edu.ar/bpg/default.asp" target="_blank"><img class="shake-little" src="img/radio.png"></a></p>
@@ -144,7 +127,7 @@
 			</li>
 			<li>
 				<p class="imagen"><a href="#."><img class="shake-little" src="img/revista.png"></a></p>
-				<h1><a href="#.">Revista de la FACSO</a></h1>
+				<h1><a href="#.">Revista 2 Puntas</a></h1>
 			</li>
 			<li>
 				<p class="imagen"><a href="https://www.google.com/maps/place/Facultad+de+Ciencias+Sociales+UNSJ/@-31.539294,-68.576487,16z/data=!4m5!3m4!1s0x0:0x6bbad1135f9236e2!8m2!3d-31.5392942!4d-68.5764875?hl=es-ES" target="_blank"><img class="shake-little" src="img/ubicacion.png"></a></p>
@@ -164,24 +147,9 @@
 		<p class="primero">Facultad de Ciencias Sociales | Universidad Nacional de San Juan</p>
 		<p>Av. Ignacio de la Roza 590 (o), Complejo Universitario "Islas Malvinas" | Rivadavia - San Juan | Argentina</p>
 		<p>CPA:J5402DCS | Teléfonos +54 - 0264 - 4231949/ 0314 /2516 - Interno Central 201</p>
-		<p class="ultimo">Desarrolado por <a href="http://www.lospepesweb.com" target="_blank" class="pepes">Los Pepes | WEB DEVELOPMENT<a></p>
+		<p class="ultimo">Desarrollado por <a href="http://www.lospepesweb.com" target="_blank" class="pepes">Los Pepes | WEB DEVELOPMENT<a></p>
 	</footer>
-<script>
-	$(document).ready(function(){
-		$('.ir-arriba').click(function(){
-			$('body, html').animate({
-				scrollTop: '0px'
-			}, 300);
-		});
-		$(window).scroll(function(){
-			if( $(this).scrollTop() > 0 ){
-				$('.ir-arriba').fadeIn(300);
-			} else {
-				$('.ir-arriba').fadeOut(400);
-			}
-		});
-	});
-</script>
+
 <span class="ir-arriba"></span>
 </body>
 </html>

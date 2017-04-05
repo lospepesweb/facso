@@ -15,26 +15,26 @@ div.sociales p {
 	font-size: 60px;
 	text-shadow: 2px 2px 3px #000;
 	color: #fff;
-	top: 400px;
+	top: 410px;
 	margin-left: 25px;
 	width: 100%;
 	position: relative;
 	animation-delay: 0.5s;
 }
 div.sociales a {
-	background-color: rgba(25,35,75,1);
+	background-color: rgb(50,71,151);
 	font-size: 20px;
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
-	top: 425px;
+	top: 435px;
 	padding: 10px;
 	margin-left: 25px;
 	border-radius: 5px;
 	position: relative;
 }
 div.sociales a:hover {
-	background-color: rgba(28,60,98,1);
+	background-color: rgba(25,35,75,1);
 }
 
 /*Sección NOTICIAS*/
@@ -140,6 +140,7 @@ section.otros ul li h1 {
 .ir-arriba {
     display: none;
     background-color: #fff;
+    opacity: 0.7;
     cursor: pointer;
     position: fixed;
     bottom: 20px;
@@ -150,8 +151,13 @@ section.otros ul li h1 {
     border-radius: 5px;
     box-shadow: 0px 0px 5px;
     z-index: 1000;
+    transform: 700;
 }
 
 .ir-arriba {
     z-index: 9999 !important;
+}
+
+.ir-arriba:hover { 
+	opacity: 1;
 }

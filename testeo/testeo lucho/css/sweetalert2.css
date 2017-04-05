@@ -738,10 +738,10 @@ body.swal2-iosfix {
 
 .boton-confirma{
   display: none;
-  color:#fff;
+  /*color:#fff;
   background-color: rgb(50,71,151);
-  /*padding: 10px;
-  line-height: 50px;*/
+  padding: 10px;
+  line-height: 50px;
   border-radius: 5px;
   border: none;
   font-family: Montserrat;
@@ -751,4 +751,4 @@ body.swal2-iosfix {
 
 .boton-confirma:hover{
  background-color: rgba(25,35,75,1);
-}
+}*/
