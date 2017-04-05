@@ -1,5 +1,5 @@
 
-section.carreras{
+/*section.carreras{
 	background-color:rgb(242,242,242);
 	clear: both;
 }
@@ -21,7 +21,18 @@ span.linea	{
 	width: 5%;
 	height: 0px;
 	border:2px solid rgba(25,35,75,0.7);
-}
+}*/
+/*section.imagen {
+    background-image: url(../img/carreras.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    clear: both;
+}*/
+
+
+
 
 .accordion-container {
     width: 60%;
