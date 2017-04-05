@@ -40,10 +40,12 @@ $(function(){
         if(contenido.css("display")=="none"){ //open        
           contenido.slideDown(250);         
           $(this).addClass("open");
+          /*$(".carreras").css("height","100vh");*/
         }
         else{ //close       
           contenido.slideUp(250);
-          $(this).removeClass("open");  
+          $(this).removeClass("open");
+          /*$(".carreras").css("height","700px");  */
         }
         
       });

@@ -4,7 +4,7 @@ section.imagen {
     background-size: cover;
     width: 100%;
     height: 200px;
-    margin-bottom: 75px;
+   /* margin-bottom: 75px;*/
     clear: both;
 }
 section.imagenCarreras {
@@ -28,12 +28,16 @@ span.linea  {
     top: 80px;
     position: relative;
     height: 0px;
-    border:2px solid rgba(25,35,75,1);
+    border:2px solid rgb(255,255,255);
 }
+section.carreras{
+    background-color: rgb(242,242,242);
+    height: auto;
+    min-height: 600px;
+    overflow:auto;
+    padding-top: 75px;
 
-
-
-
+}
 .accordion-container {
     width: 60%;
     margin: 0 0 5% 2.5%;
