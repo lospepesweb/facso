@@ -82,6 +82,11 @@ span.linea	{
 .carrera-contenido h2{
 	font-size: 18px;
 	color: rgb(151,118,20);
+	margin-bottom: 0.5%;
+}
+.carrera-contenido h2.ciclo-complementario{
+	font-size: 20px;
+	color: rgb(25,35,75);
 }
 .carrera-contenido h2:nth-of-type(2), .carrera-contenido h2:nth-of-type(3){
 	margin-top: 1%;
@@ -89,17 +94,26 @@ span.linea	{
 .carrera-contenido p{
     font-size: 14px;
     text-align: justify;
+    line-height: 18px;
+}
+.carrera-contenido p.mas {
+    width: 100%;
+    text-align: right;
+    margin-top: 2%;
+
 }
 .carrera-contenido p a {
-    font-size: 14px;
-    text-align: justify;
-    margin-top: 1%;
-    text-decoration: none;
-    float: right;
+	font-size: 14px;
+	text-decoration: none;
     color:rgb(151,118,20);
 }
+
 .carrera-contenido p a:hover {
     font-weight: 600;
+}
+.item {
+	font-weight: 600;
+	color: rgb(151,118,20);
 }
 
 .ingreso{
