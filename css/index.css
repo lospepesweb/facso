@@ -1,7 +1,163 @@
+/*Imagen principal*/
 section.home {
-	background-image: url(../img/somosSociales3.png);
+	background-image: url(../img/fondo.jpg);
 	background-repeat: no-repeat;
+	background-size: cover;
 	width: 100%;
 	height: 768px;
 	clear: both;
+}
+div.sociales {
+	position: absolute;
+	animation-delay: 0.5s;
+}
+div.sociales p {
+	font-size: 60px;
+	text-shadow: 2px 2px 3px #000;
+	color: #fff;
+	top: 410px;
+	margin-left: 25px;
+	width: 100%;
+	position: relative;
+	animation-delay: 0.5s;
+}
+div.sociales a {
+	background-color: rgb(50,71,151);
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	top: 435px;
+	padding: 10px;
+	margin-left: 25px;
+	border-radius: 5px;
+	position: relative;
+}
+div.sociales a:hover {
+	background-color: rgba(25,35,75,1);
+}
+
+/*Sección NOTICIAS*/
+section.noticias {
+	margin-bottom: 125px;
+}
+section.noticias h1 {
+	font-size: 48px;
+	font-weight: 200;
+	text-align: center;
+	letter-spacing: 3px;
+	color: rgb(25,35,75);
+	width:100%;
+	margin-top: 125px;
+}
+span.linea	{
+	margin-top:5px;
+	margin-bottom: 75px;
+	margin-left:47.5%;
+	margin-right:47.5% ;
+	float: left;
+	width: 5%;
+	height: 0px;
+	border:2px solid rgba(25,35,75,0.7);
+}
+div.noticia {
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	width: 20%;
+	float: left;
+}
+div.noticia h1.titulo {
+	font-size: 2.5rem;
+	text-align: left;
+	color: rgb(151,118,20);
+	height: 125px;
+	margin-top:2%;
+	overflow: hidden;
+}
+div.noticia h2.fecha {
+	font-style: italic;
+	font-weight: 200;
+	color: rgba(0,0,0,0.6);
+	margin: 5% 0;
+}
+span.intro {
+	display: block;
+	height: 115px;
+	overflow: hidden;
+}
+p.mas {
+	text-align: left;
+	margin-top: 5%;
+}
+p.mas a {
+	text-decoration: none;
+	color: rgb(151,118,20);
+}
+p.masNoticias {
+	margin-top:35%;
+	margin-left: 2.5%;
+	clear: both;
+}
+a.masNoticias {
+	text-decoration: none;
+	color:#fff;
+	background-color: rgb(50,71,151);
+	padding: 10px;
+	border-radius: 5px;
+	transition: all 0.2s ease;
+}
+a.masNoticias:hover{
+	background-color: rgba(25,35,75,1);
+}
+
+
+/*Sección OTROS*/
+section.otros {
+	background-color: rgba(25,35,75,0.5);
+	height: 450px;
+}
+section.otros ul {
+	width: 100%;
+}
+section.otros ul li {
+	list-style-type: none;
+	margin-top: 50px;
+	width: 25%;
+	float: left;
+}
+section.otros ul li a {
+	text-decoration: none;
+	color: rgb(0,0,0);
+}
+section.otros ul li p.imagen {
+	text-align: center;
+}
+section.otros ul li h1 {
+	margin-top: 5px;
+	text-align: center;
+}
+
+.ir-arriba {
+    display: none;
+    background-color: #fff;
+    opacity: 0.7;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-image: url(../img/flecha-top.png);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px;
+    z-index: 1000;
+    transform: 700;
+}
+
+.ir-arriba {
+    z-index: 9999 !important;
+}
+
+.ir-arriba:hover { 
+	opacity: 1;
 }

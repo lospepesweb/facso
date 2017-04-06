@@ -3,133 +3,152 @@
 	padding: 0;
 	font-family: Montserrat;
 	font-size: 14px;
-	box-sizing: border-box;
+	box-sizing: content-box;
 }
 @font-face {
 	font-family: Montserrat;
 	src: url("../fonts/Montserrat-Regular.ttf");
 }
-.menu {
-	/*margin-top: 10px;*/
-}
-.menu ul {
+
+/*Navegación*/
+nav.menu {
 	background-color: #fff;
-	width: 1085px;
-	margin: auto;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1040px;
+	clear: both;
 }
-.menu > ul > li {
+nav.menu ul {
+	width: 100%;
+}
+nav.menu ul li {
 	line-height: 70px;
-	list-style-type: none;
-	float: left;
 	width: 155px;
 	height: 70px;
-	display: block;
+	float: left;
+	position: relative;
+	z-index: 1;
 }
-.menu > ul > li:hover {
+nav.menu ul li:hover {
 	font-weight: 600;
 }
-.menu ul li a {
-	text-decoration: none;
-	color: rgb(25,35,75);
-}
-li.logo {
-	text-align: center;
-	background-position: center;
-	background-repeat: no-repeat;
+nav.menu ul li.logo {
 	width: 70px;
 }
-.menu > ul > li:nth-child(1){
-	text-align: center;
+.menu li {
+	list-style-type: none;
 }
-.menu > ul > li:nth-child(2), .menu > ul > li:nth-child(3) {
+.menu a {
+	text-decoration: none;
+	color:rgb(25,35,75);
+}
+nav.menu ul li.unsj {
 	text-align: right;
+	width: 40px;
+	margin-left: 115px;
 }
-.menu > ul > li:nth-child(5), .menu > ul > li:nth-child(6), .menu > ul > li:nth-child(7) {
+nav.menu ul li.institucional {
+	z-index: 9999999999999999999999999999;
+	width: 115px;
+	margin-left: 40px;
+}
+nav.menu ul li.academica {
+	width: 95px;
+	margin-left: 40px;
+	margin-right: 20px;
+}
+.institucional:hover > ul.subMenu, .academica:hover > ul.subMenu, .investigacion:hover > ul.subMenu, .alumnos:hover > ul.subMenu, .docentes:hover > ul.subMenu {
+	display: block;
+}
+.academica > ul.subMenu > a li{
+	width: 250px;
+	position: relative;
+	z-index: 9999999999999999999999999999;
+}
+nav.menu ul li.logo {
+	text-align: center;
+	width: 110px;
+}
+li.investigacion, li.alumnos, li.docentes {
 	text-align: left;
 }
-ul.subMenu {
-	display: none;
-	width: 160px;
-	border-radius: 0 0 5px 5px;
-	box-shadow: 1px 1px 5px #000;
+nav.menu ul li.investigacion {
+	width: 115px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
-.subMenu > li {
-	list-style-type: none;
-	color: rgba(25,35,75);
-	width: 160px;
+nav.menu ul li.alumnos {
+	width: 75px;
+	margin-left: 20px;
+	margin-right: 40px;
+}
+nav.menu ul li.docentes {
+	width: 80px;
+	margin-right: 80px;
+}
+.investigacion > ul.subMenu > a li{
+	width: 325px;
+	position: relative;
+}
+.alumnos > ul.subMenu > a li, .docentes > ul.subMenu > a li{
+	width: 200px;
+	position: relative;
+}
+.subMenu {
+
+	display: none;
+}
+.subMenu a {
+	color: rgb(25,35,75);
+}
+.subMenu a:hover {
+	color: #fff;
+	font-weight: normal;
 }
 .subMenu a li {
-	list-style-type: none;
-}
-.subMenu a li.padding {
-	padding-top: 18px;
-}
-.subMenu > a:hover {
-	color:#fff;
-}
-.subMenu > a:last-child li {
-	border-radius: 0 0 4px 4px;
-}
-.subMenu > a:hover > li {
-	background-color: rgb(25,35,75);
-}
-.subMenu > a:hover {
-	background-color: rgb(25,35,75);
-}
-.subMenu > li:hover {
-	color: #fff;
-	background-color: rgb(25,35,75);
-}
-.subMenu > li:hover a {
-	color: #fff;
-	background-color: rgb(25,35,75);
-}
-li.institucional .subMenu li {
-	text-align: right;
-	line-height: 70px;
-	height: 70px;
+					box-shadow: 1px 2px 2px #222;
+	background-color: #fff;
 	padding-right: 5px;
-}
-li.academica .subMenu li {
-	text-align: right;
-	line-height: 70px;
-	height: 70px;
-	padding-right: 5px;
-}
-li.academica .subMenu li:nth-child(3), li.academica .subMenu li:nth-child(4){
-	line-height: 70px;
-}
-li.academica .subMenu li:nth-child(1), li.academica .subMenu li:nth-child(2){
-	line-height: 35px;
-}
-li.investigacion .subMenu li, li.alumnos .subMenu li, li.docentes .subMenu li {
-	text-align: left;
-	height: 70px;
 	padding-left: 5px;
 }
-li.investigacion ul.subMenu {
-	width: 200px;
+.subMenu a li:hover {
+	background-color: rgb(25,35,75);
 }
-li.investigacion ul.subMenu li {
-	width: 200px;
+.subMenu a li.borderRadius {
+	border-radius: 0 0 5px 5px;
 }
-li.investigacion .subMenu li:nth-child(1) {
-	line-height: 35px;
-	padding-top: 0.5px;
+
+
+/*Footer*/
+
+footer {
+	background-color: rgba(25,35,75,1);
+	height: 160px;
+	clear: both;
 }
-li.investigacion .subMenu li:nth-child(2) {
-	line-height: 35px;
+footer p {
+	font-size: 14px;
+	font-weight: 200;
+	text-align: center;
+	line-height: 25px;
+	color: #fff;
+	margin-left: 10%;
+	width: 80%;
 }
-li.investigacion .subMenu li:nth-child(3) {
-	line-height: 70px;
+p.primero {
+	padding-top: 25px;
 }
-li.alumnos .subMenu li {
-	line-height: 70px;
+p.ultimo{
+	padding-top: 10px;
+	padding-bottom: 25px;
 }
-li.alumnos .subMenu li:last-child, li.docentes .subMenu li:last-child {
-	line-height: 35px;
+
+a.pepes {
+	text-decoration: none;
+	color:#fff;
 }
-.menu .institucional:hover > .subMenu, .menu .academica:hover > .subMenu, .menu .investigacion:hover > .subMenu,.menu .alumnos:hover > .subMenu, .menu .docentes:hover > .subMenu {
-	font-weight: 400;
-	display: block;
+a.pepes:hover {
+	font-weight: 600;
+	color: rgb(140,145,165);
 }

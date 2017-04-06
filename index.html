@@ -2,59 +2,154 @@
 <html lang="es">
 <head>
 	<title>Facultad de Ciencias Sociales</title>
-	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/shake.css">
+	<link rel="stylesheet" type="text/css" href="css/sweetalert2.css">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/logoS.png">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script src="js/sweetalert2.js"></script>
+	<script src="js/app.js"></script>
 </head>
 <body>
 	<nav class="menu">
 		<ul>
-			<li><a href="http://www.unsj.edu.ar" target="_blank">UNSJ</a></li>
+			<li class="unsj" title="Web UNSJ"><a href="http://www.unsj.edu.ar" target="_blank">UNSJ</a></li>
 			<li class="institucional"><a href="#.">INSTITUCIONAL</a>
-				<ul class="subMenu">
+				<ul class="subMenu animated2 fadeIn">
 					<a href="#."><li>Autoridades</li></a>
-					<a href="#."><li>Historia</li></a>
+					<a href="#."><li class="borderRadius">Historia</li></a>
 				</ul>
 			</li>
 			<li class="academica"><a href="#.">ACADÉMICA</a>
-				<ul class="subMenu">
-					<a href="#."><li>Dpto. Cias de la Comunicación</li></a>
-					<a href="#."><li>Dpto. Cias Económicas</li></a>
-					<a href="#."><li class="padding">Dpto. Cias Jurídicas</li></a>
-					<a href="#."><li class="padding">Dpto. Cias Políticas</li></a>
-					<a href="#."><li class="padding">Dpto. Cias Sociologia</li></a>
-					<a href="#."><li class="padding">Dpto. Trabajo Social</li></a>
+				<ul class="subMenu animated2 fadeIn">
+					<a href="https://dptocomunicacionunsj.wordpress.com/" target="_blank"><li>Depto. de Cs. de la Comunicación</li></a>
+					<a href="https://cienciaseconomicasunsj.jimdo.com/" target="_blank"><li>Depto. de Cs. Económicas</li></a>
+					<a href="#." onclick="DeptoSinWeb()"><li>Depto. de Cs. Jurídicas</li></a>
+					<a href="#." onclick="DeptoSinWeb()"><li>Depto. de Cs. Políticas</li></a>
+					<a href="http://www.facso.unsj.edu.ar/dep_sociologia/index.html" target="_blank"><li>Depto. de Sociologia</li></a>
+					<a href="#." onclick="DeptoSinWeb()"><li class="borderRadius">Depto. de Trabajo Social</li></a>
 				</ul>
 			</li>
-			<li class="logo"><a href="index.html"><img src="img/logoS.png"></a></li>
+			<li class="logo" title="Inicio"><a href="index.html"><img src="img/logoS.png" height="65px"></a></li>
 			<li class="investigacion"><a href="#.">INVESTIGACIÓN</a>
-				<ul class="subMenu investigacion">
+				<ul class="subMenu animated2 fadeIn">
 					<a href="#."><li>Inst. de Investigaciones Administrativas Contables</li></a>
-					<a href="#."><li>Inst. de Investigaciones Socio Economicas</li></a>
-					<a href="#." class="padding"><li >Gabinete de Investigación</li></a>
+					<a href="#."><li>Inst. de Investigaciones Socio Económicas</li></a>
+					<a href="#."><li class="borderRadius">Gabinetes de Investigación</li></a>
 				</ul>
 			</li>
 			<li class="alumnos"><a href="#.">ALUMNOS</a>
-				<ul class="subMenu">
-					<a href="#."><li class="padding">Ingresantes</li></a>
-					<a href="#."><li class="padding">SIU Guaraní</li></a>
-					<a href="#."><li class="padding">Campus Virtual</li></a>
-					<a href="#."><li class="padding">Becas</li></a>
-					<a href="#."><li class="padding">Movilidad estudiantil</li></a>
-					<a href="#."><li>Calendario Académico</li></a>
+				<ul class="subMenu animated2 fadeIn">
+					<a href="#."><li>Ingresantes</li></a>
+					<a href="http://siu.facso.unsj.edu.ar/" target="_blank"><li>SIU Guaraní</li></a>
+					<a href="#."><li>Campus Virtual</li></a>
+					<a href="#."><li>Becas</li></a>
+					<a href="#."><li>Movilidad estudiantil</li></a>
+					<a href="img/calendario.pdf" target="_blank"><li class="borderRadius">Calendario Académico</li></a>
 				</ul>
 			</li>
 			<li class="docentes"><a href="#.">DOCENTES</a>
-				<ul class="subMenu">
-					<a href="#."><li class="padding">SIU Guaraní</li></a>
-					<a href="#."><li class="padding">Campus Virtual</li></a>
-					<a href="#."><li class="padding">Concursos</li></a>
-					<a href="#."><li>Foja de servicios digitales</li></a>
+				<ul class="subMenu animated2 fadeIn">
+					<a href="http://siu.facso.unsj.edu.ar/" target="_blank"><li>SIU Guaraní</li></a>
+					<a href="#."><li>Campus Virtual</li></a>
+					<a href="#."><li>Concursos</li></a>
+					<a href="http://www.facso.unsj.edu.ar/fojadigital/" target="_blank"><li class="borderRadius">Foja de Servicio Digital</li></a>
 				</ul>
 			</li>
 		</ul>
 	</nav>
+
+<!--Sección HOME-->
 	<section class="home">
+		<div class="sociales animated fadeInUp">
+			<p>Facultad de Ciencias Sociales</p>
+			<a href="#.">Ingreso</a>
+			<a href="html/carreras.html">Carreras</a>
+		</div>
 	</section>
+
+<!--Sección Noticias-->
+	<section class="noticias">
+		<h1>NOTICIAS</h1>
+		<span class="linea"></span>
+		<!--Noticia N°1-->
+		<div class="noticia">
+			<h1 class="titulo">Elegimos educación pública</h1>
+			<h2 class="fecha">31 de marzo de 2017</h2>
+			<span class="intro"><p class="intro">En relación a la declaración del Sr. Presidente de la Nación Mauricio Macri en la que expresó "la terrible inequidad entre los que pueden ir a escuela privada y aquel que tiene que caer en la escuela pública”...</p></span>
+			<p class="mas"><a href="#.">Leer más...</a></p>
+		</div>
+		<!--Noticia N°2-->
+		<div class="noticia">
+			<h1 class="titulo">Programas de Movilidad Estudiantil</h1>
+			<h2 class="fecha">31 de marzo de 2017</h2>
+			<span class="intro"><p class="intro">Del 3 al 16 de abril se abre la convocatoria para los programas de movilidad estudiantil correspondiente al 2º semestre de 2017.</p></span>
+			<p class="mas"><a href="#.">Leer más...</a></p>
+		</div>		
+		<!--Noticia N°3-->
+		<div class="noticia">
+			<h1 class="titulo">52º Aniv. de la Estación Astronómica Cesco</h1>
+			<h2 class="fecha">31 de marzo de 2017</h2>
+			<span class="intro"><p class="intro">La Estación Astronómica Dr. Carlos Ulrico Cesco, ubicada en Barreal, Calingasta, dependiente de la Facultad de Ciencias Exactas, Físicas y Naturales (FCEFN) de la UNSJ; cumple hoy, 31 de marzo, 52 años; y..</p></span>
+			<p class="mas"><a href="#.">Leer más...</a></p>
+		</div>
+		<!--Noticia N°4-->
+		<div class="noticia">
+			<h1 class="titulo">Revista La Universidad: novedades.</h1>
+			<h2 class="fecha">28 de marzo de 2017</h2>
+			<span class="intro"><p class="intro">La publicación de la Dirección de Prensa Institucional, dependiente de la Secretaría de Comunicación, difunde nuevos contenidos.</p></span>
+			<p class="mas"><a href="#.">Leer más...</a></p>
+		</div>
+		<p class="masNoticias"><a class="masNoticias" href="#.">Ver todas noticias</a></p>
+	</section>
+
+<!--Sección OTROS-->
+	<section class="otros">
+		<ul>
+			<li>
+				<p class="imagen"><a href="#."><img class="shake-little" src="img/news.png"><a/></p>
+				<h1><a href="#.">Periódico de la FACSO</a></h1>
+			</li>
+			<li>
+				<p class="imagen"><a href="http://www.radio.unsj-cuim.edu.ar/bpg/default.asp" target="_blank"><img class="shake-little" src="img/radio.png"></a></p>
+				<h1><a href="http://www.radio.unsj-cuim.edu.ar/bpg/default.asp" target="_blank">Radio Universidad</a></h1>
+			</li>
+			<li>
+				<p class="imagen"><a href="#."><img class="shake-little" src="img/directorio.png"></a></p>
+				<h1><a href="#.">Directorio</a></h1>
+			</li>
+			<li>
+				<p class="imagen"><a href="#."><img class="shake-little" src="img/computacion.png"></a></p>
+				<h1><a href="#.">Computación</a></h1>
+			</li>
+			<li>
+				<p class="imagen"><a href="#."><img class="shake-little" src="img/revista.png"></a></p>
+				<h1><a href="#.">Revista 2 Puntas</a></h1>
+			</li>
+			<li>
+				<p class="imagen"><a href="https://www.google.com/maps/place/Facultad+de+Ciencias+Sociales+UNSJ/@-31.539294,-68.576487,16z/data=!4m5!3m4!1s0x0:0x6bbad1135f9236e2!8m2!3d-31.5392942!4d-68.5764875?hl=es-ES" target="_blank"><img class="shake-little" src="img/ubicacion.png"></a></p>
+				<h1><a href="https://www.google.com/maps/place/Facultad+de+Ciencias+Sociales+UNSJ/@-31.539294,-68.576487,16z/data=!4m5!3m4!1s0x0:0x6bbad1135f9236e2!8m2!3d-31.5392942!4d-68.5764875?hl=es-ES" target="_blank">Ubicación</a></h1>
+			</li>
+			<li>
+				<p class="imagen"><a href="img/calendario.pdf" target="_blank"><img class="shake-little" src="img/calendarioICON.png"></a></p>
+				<h1><a href="img/calendario.pdf" target="_blank"">Calendario Académico</a></h1>
+			</li>
+			<li>
+				<p class="imagen"><a href="http://siu.facso.unsj.edu.ar/" target="_blank"><img class="shake-little" src="img/siuICON.png"></a></p>
+				<h1><a href="http://siu.facso.unsj.edu.ar/" target="_blank">SIU-Guaraní</a></h1>
+			</li>
+		</ul>
+	</section>
+	<footer>
+		<p class="primero">Facultad de Ciencias Sociales | Universidad Nacional de San Juan</p>
+		<p>Av. Ignacio de la Roza 590 (o), Complejo Universitario "Islas Malvinas" | Rivadavia - San Juan | Argentina</p>
+		<p>CPA:J5402DCS | Teléfonos +54 - 0264 - 4231949/ 0314 /2516 - Interno Central 201</p>
+		<p class="ultimo">Desarrollado por <a href="http://www.lospepesweb.com" target="_blank" class="pepes">Los Pepes | WEB DEVELOPMENT<a></p>
+	</footer>
+
+<span class="ir-arriba"></span>
 </body>
 </html>
