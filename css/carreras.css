@@ -56,6 +56,10 @@ section.carreras{
     color: rgb(25,35,75);
     text-decoration: none;
 }
+.carrera-nombre:first-of-type {
+ border-radius: 5px 5px 0 0;
+}
+
 .carrera-nombre.open {
     background: rgb(25,35,75);
     color: #fff;
@@ -104,8 +108,8 @@ section.carreras{
 	font-size: 20px;
 	color: rgb(25,35,75);
 }
-.carrera-contenido h2:nth-of-type(2), .carrera-contenido h2:nth-of-type(3){
-	margin-top: 1%;
+.carrera-contenido h2:not(:first-of-type){
+	margin-top: 2%;
 }
 .carrera-contenido p{
     font-size: 14px;
@@ -131,14 +135,40 @@ section.carreras{
 	font-weight: 600;
 	color: rgb(151,118,20);
 }
-
+.item1 a{
+    text-decoration: none;
+    color: rgb(151,118,20);
+}
+.item1 a:hover{
+    font-weight: 600;
+}
 .ingreso{
 	width: 27%;
-	height: 100px;
+	height: 145px;
     margin: 0 2.5% 5% 2.5%;
     float: right;
-    border: black 2px solid;
+    box-shadow: 0px 0px 10px #888;
+    border-radius: 5px;
+    /*position: fixed;*/ /*si pongo esto se va a la izquierda*/
+    /*quiero que se quede donde está en las x y que se fije en las y*/
 }
+.ingreso-titulo{
+    background-color: rgb(25,35,75);
+    color:rgb(255,255,255);
+    width: 100%;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+}
+.ingreso-texto{
+    margin: 2%;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+}
+
 
 .ir-arriba {
     display: none;

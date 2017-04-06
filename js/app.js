@@ -11,7 +11,13 @@ $(document).ready(function(){
         $('.ir-arriba').fadeOut(400);
       }
     });
+    $(".carrera1").animate({fadeIn},200);
+    $(".carrera2").fadeIn(300);
+    $(".carrera3").fadeIn(400);
   });
+/*$(document).ready(function(){
+  
+});*/
 
 function DeptoSinWeb(){
 			swal({
