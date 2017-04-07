@@ -203,26 +203,17 @@ section.otros ul li h1 {
 		margin-top: 0%;
 		margin-bottom: 5%;
 	}
-	p.mas a {
-		text-decoration: none;
-		color: rgb(151,118,20);
-	}
 	p.masNoticias {
 		text-align: center;
 		margin-top:15%;
-		margin-left: 2.5%;
-		clear: both;
 	}
-	a.masNoticias {
-		text-decoration: none;
-		color:#fff;
-		background-color: rgb(50,71,151);
-		padding: 10px;
-		border-radius: 5px;
-		transition: all 0.2s ease;
+
+	/*Sección OTROS*/
+	section.otros {
+		height: 800px;
 	}
-	a.masNoticias:hover{
-		background-color: rgba(25,35,75,1);
+	section.otros ul li {
+		width: 50%;
 	}
 
 }
