@@ -126,7 +126,6 @@ nav.menu ul li.docentes {
 }
 	
 /*Footer*/
-
 footer {
 	background-color: rgba(25,35,75,1);
 	height: 160px;
@@ -159,7 +158,6 @@ a.pepes:hover {
 }
 
 /*Responsive*/
-
 @media screen and (max-width: 1040px) {
 	nav.menu {
 		display: none;
@@ -264,5 +262,14 @@ a.pepes:hover {
 		margin-left:10px;
 		margin-right:0px;
 		float: right;
+	}
+
+	/*Footer*/
+	footer {
+		height: 250px;
+	}
+	footer p {
+		margin-left: 5%;
+		width: 90%;
 	}
 }
