@@ -165,3 +165,64 @@ section.otros ul li h1 {
 .ir-arriba:hover { 
 	opacity: 1;
 }
+
+@media screen and (max-width: 1040px) {
+	section.home {
+		height: 600px;
+	}
+	div.sociales p {
+		top: 100px;
+	}
+	div.sociales a {
+		top: 135px;
+	}
+
+	/*Sección Noticias*/
+	div.noticia {
+		margin-right: 10%;
+		margin-bottom: 5%;
+		margin-left: 10%;
+		width: 80%;
+		float: none;
+		border-bottom: 1px solid rgba(25,35,75,0.5);
+	}
+	div.noticia h1.titulo {
+		text-align: center;
+	}
+	div.noticia h2.fecha {
+		text-align: center;
+	}
+	span.intro {
+		text-align: justify;
+		display: block;
+		height: 115px;
+		overflow: hidden;
+	}
+	p.mas {
+		text-align: left;
+		margin-top: 0%;
+		margin-bottom: 5%;
+	}
+	p.mas a {
+		text-decoration: none;
+		color: rgb(151,118,20);
+	}
+	p.masNoticias {
+		text-align: center;
+		margin-top:15%;
+		margin-left: 2.5%;
+		clear: both;
+	}
+	a.masNoticias {
+		text-decoration: none;
+		color:#fff;
+		background-color: rgb(50,71,151);
+		padding: 10px;
+		border-radius: 5px;
+		transition: all 0.2s ease;
+	}
+	a.masNoticias:hover{
+		background-color: rgba(25,35,75,1);
+	}
+
+}
