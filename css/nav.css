@@ -171,6 +171,7 @@ a.pepes:hover {
 	}
 	body {
 		padding-top:80px;
+		width: 100%;
 	}
 	header {
 		width: 100%;
@@ -266,7 +267,7 @@ a.pepes:hover {
 
 	/*Footer*/
 	footer {
-		height: 250px;
+		height: 300px;
 	}
 	footer p {
 		margin-left: 5%;

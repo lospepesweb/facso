@@ -169,11 +169,15 @@ section.otros ul li h1 {
 @media screen and (max-width: 1040px) {
 	section.home {
 		height: 600px;
+		width: 105%
 	}
 	div.sociales p {
+		font-size: 55px;
+		margin-left: 10px;
 		top: 100px;
 	}
 	div.sociales a {
+		margin-left: 10px;
 		top: 135px;
 	}
 
