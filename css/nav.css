@@ -186,6 +186,7 @@ a.pepes:hover {
 		position: fixed;
 		top:0;
 		background:rgb(25,35,75);
+		z-index: 10000;
 	}
 	.menu_bar .bt-menu {
 		display: block;
@@ -246,6 +247,7 @@ a.pepes:hover {
 		overflow: hidden;
 	}
 	header nav ul li .children li a {
+		color: rgb(25,35,75);
 		display: block;
 		margin-left:20px;
 	}
