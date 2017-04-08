@@ -169,12 +169,13 @@ section.otros ul li h1 {
 @media screen and (max-width: 1040px) {
 	section.home {
 		height: 600px;
-		width: 105%
+		width: 100%
 	}
 	div.sociales p {
 		font-size: 55px;
 		margin-left: 10px;
 		top: 100px;
+		width: 95%;
 	}
 	div.sociales a {
 		margin-left: 10px;
@@ -189,6 +190,11 @@ section.otros ul li h1 {
 		width: 80%;
 		float: none;
 		border-bottom: 1px solid rgba(25,35,75,0.5);
+	}
+	span.linea	{
+		margin-left:42.5%;
+		margin-right:42.5% ;
+		width: 15%;
 	}
 	div.noticia h1.titulo {
 		text-align: center;
@@ -214,6 +220,7 @@ section.otros ul li h1 {
 
 	/*Sección OTROS*/
 	section.otros {
+		width: 100%;
 		height: 800px;
 	}
 	section.otros ul li {

@@ -143,14 +143,15 @@ section.carreras{
     font-weight: 600;
 }
 .ingreso{
+    background-color: rgb(242,242,242);
 	width: 27%;
-	height: 145px;
+	/*height: 145px;*/
     margin: 0 2.5% 5% 2.5%;
     float: right;
     box-shadow: 0px 0px 10px #888;
     border-radius: 5px;
-    /*position: fixed;*/ /*si pongo esto se va a la izquierda*/
-    /*quiero que se quede donde está en las x y que se fije en las y*/
+    position: fixed;
+    margin-left: 70%;
 }
 .ingreso-titulo{
     background-color: rgb(25,35,75);
@@ -195,8 +196,37 @@ section.carreras{
 	opacity: 1;
 }
 
-@media (max-width: 767px) {
-    .accordion-content {
-        padding: 10px 0;
+@media (max-width: 1040px) {
+
+    div.ingreso {
+        display: none;
+    }
+    div.imagenCarreras p {
+        top: 60px;
+    }
+    span.linea  {
+        margin-left:45%;
+        margin-right:47.5% ;
+        width: 10%;
+        top: 60px;
+    }
+    .accordion-container {
+        width: 95%;
+        margin: 0 2.5% 5% 2.5%;
+    }
+    .carrera-nombre {
+        padding: 20px;
+        padding-right: 50px;
+    }
+    .carrera-contenido {
+        display: none;
+        padding: 20px;
+        overflow: auto;
+    }
+    .carrera-nombre:nth-of-type(2) span.toggle-icon, .carrera-nombre:nth-of-type(3) span.toggle-icon, .carrera-nombre:nth-of-type(4) span.toggle-icon,.carrera-nombre:nth-of-type(5) span.toggle-icon, .carrera-nombre:nth-of-type(8) span.toggle-icon {
+        top: 20px;
+    }
+    .carrera-contenido img {
+        display: none;
     }
 }

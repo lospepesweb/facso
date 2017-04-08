@@ -268,6 +268,7 @@ a.pepes:hover {
 	/*Footer*/
 	footer {
 		height: 300px;
+		width: 100%;
 	}
 	footer p {
 		margin-left: 5%;
