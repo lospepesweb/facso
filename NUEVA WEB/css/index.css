@@ -1,0 +1,14 @@
+@font-face {
+	font-family: Montserrat;
+	src: url("../fonts/Montserrat-Regular.ttf");
+}
+body {
+	font-family: Montserrat;
+}
+section.home {
+	background-image: url("../img/fondo.jpg");
+	background-size: cover;
+}
+ul.navbar-nav {
+	background-color: #fff;
+}
