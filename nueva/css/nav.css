@@ -5,46 +5,14 @@
 body {
 	font-family: Montserrat;
 }
-section.home {
-	background-image: url("../img/fondo.jpg");
-	background-size: cover;
-}
 ul.navbar-nav {
 	background-color: #fff;
 }
-h1 {
-	font-size: 60px;
-	color: #fff;
-	text-shadow: 2px 2px 3px #000;
-	margin-bottom: 20px;
-}
-.titulo > a {
-	background-color: rgb(25,35,75);
-    
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-}
-.titulo > a:last-child {
-	margin-left: 20px;
-}
-.titulo > a:hover {
-	background-color: rgb(50,71,151);
-}
-
-
-
-/*MENU*/
-
-
+/* ANIMACION DEL MENÚ HAMBURGUESA */
 * {
   margin: 0;
   padding: 0; 
 }
-
 #nav-iconLucho {
 	margin-right: auto;
 	margin-left: auto;
@@ -58,7 +26,6 @@ h1 {
 	transition: .5s ease-in-out;
 	cursor: pointer;
 }
-
 #nav-iconLucho span {
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
@@ -69,7 +36,6 @@ h1 {
 	-o-transition: .25s ease-in-out;
 	transition: .25s ease-in-out;
 }
-
 #nav-iconLucho span:nth-child(1) {
 	top: 0px;
 	-webkit-transform-origin: left center;
@@ -77,7 +43,6 @@ h1 {
 	-o-transform-origin: left center;
 	transform-origin: left center;
 }
-
 #nav-iconLucho span:nth-child(2) {
 	top: 18px;
 	-webkit-transform-origin: left center;
@@ -85,7 +50,6 @@ h1 {
 	-o-transform-origin: left center;
 	transform-origin: left center;
 }
-
 #nav-iconLucho span:nth-child(3) {
 	top: 36px;
 	-webkit-transform-origin: left center;
@@ -93,19 +57,16 @@ h1 {
 	-o-transform-origin: left center;
 	transform-origin: left center;
 }
-
 #nav-iconLucho.open span:nth-child(1) {
 	-webkit-transform: rotate(35deg);
 	-moz-transform: rotate(35deg);
 	-o-transform: rotate(35deg);
 	transform: rotate(35deg);
 }
-
 #nav-iconLucho.open span:nth-child(2) {
 	width: 0%;
 	opacity: 0;
 }
-
 #nav-iconLucho.open span:nth-child(3) {
 	-webkit-transform: rotate(-35deg);
 	-moz-transform: rotate(-35deg);

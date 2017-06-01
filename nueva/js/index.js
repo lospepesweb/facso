@@ -15,7 +15,7 @@ var seteo = function(){
 
 // EVENTOS
 seteo();
-window.addEventListener("resize", seteo);
+//window.addEventListener("resize", seteo);
 
 
 
