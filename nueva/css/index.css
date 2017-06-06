@@ -10,8 +10,7 @@ body {
   padding: 0; 
 }
 
-
-/* ANIMACION DEL MENÚ HAMBURGUESA */
+/* -- NAV -- */
 ul.navbar-nav {
 	background-color: #fff;
 }
@@ -76,6 +75,7 @@ ul.navbar-nav {
 	transform: rotate(-35deg);
 }
 
+/* -- INDEX -- */
 section.home {
 	background-image: url("../img/fondo.jpg");
 	background-size: cover;
@@ -130,14 +130,17 @@ span.linea {
 .noticias {
 	padding: 100px 0;
 }
-.noticias h2 {
+h2 {
 	font-size: 52px;
 	color: rgb(25,35,75);
+}
+.noticias a:hover,
+.noticias a:link {
+	text-decoration: none;
 }
 .noticias h3 {
     font-size: 38px;
     text-align: left;
-    min-height: 125px;
     color: rgb(151,118,20);
     height: auto;
     margin-top: 2%;
@@ -217,6 +220,27 @@ a.masNoticias:hover {
 .links p {
 	font-size: 18px;
 }
+
+/* -- ALL NEWS -- */
+.allNews {
+	padding: 100px 0;
+}
+.allNews h3 {
+	margin-top: 0;
+}
+.allNews h4 {
+	font-size: 12px;
+    font-style: italic;
+    font-weight: 200;
+    color: rgba(0,0,0,0.6);
+}
+.allNews .row {
+	margin-bottom: 100px;
+}
+.allNews .paginacion li a {
+	color:rgb(25,35,75);
+}
+/* -- FOOTER -- */
 footer {
 	padding: 50px 0;
 	color: rgb(25,35,75);
