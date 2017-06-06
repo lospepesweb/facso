@@ -127,7 +127,9 @@
 					<a href="#.">
 						<h3>Macri gato</h3>
 					</a>
-					<img src="img/gato.jpg" class="img-responsive center-block" alt="Imagen">
+					<div>
+						<img src="img/gato.jpg" class="img-responsive center-block" alt="Imagen">
+					</div>
 					<h4 >31 de marzo de 2017</h4>
 					<p class="intro">En relación a la declaración del Sr. Presidente de la Nación Mauricio Macri en la que expresó "la terrible inequidad entre los que pueden ir a escuela privada y aquel que tiene que caer en la escuela pública”...</p>
 					<a class="mas" href="#">Leer más...</a>
@@ -209,5 +211,12 @@
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#nav-iconLucho').click(function(){
+				$(this).toggleClass('open');
+			});
+			});
+	</script>
 </body>
 </html>

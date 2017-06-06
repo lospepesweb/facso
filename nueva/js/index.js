@@ -1,4 +1,4 @@
-(function(){
+// (function(){
 
 
 // -- CENTRADO VERTICAL DEL FORMULARIO -- //
@@ -19,12 +19,4 @@ seteo();
 
 
 
-// -- ANIMACIÓN DEL MENU HAMBURGUESA -- //
-$(document).ready(function(){
-	$('#nav-iconLucho').click(function(){
-		$(this).toggleClass('open');
-	});
-});
-
-
-}())
+// }())
