@@ -1,3 +1,6 @@
+/* -- Styles by Los Pepes -- */
+
+/* -- ELEMENTOS COMUNES EN TODAS LAS PÁGINAS -- */
 @font-face {
 	font-family: Montserrat;
 	src: url("../fonts/Montserrat-Regular.ttf");
@@ -9,6 +12,65 @@ body {
   margin: 0;
   padding: 0; 
 }
+h1 {
+	font-size: 60px;
+	color: #fff;
+	text-shadow: 2px 2px 3px #000;
+	margin-bottom: 20px;
+}
+h2 {
+	font-size: 52px;
+	color: rgb(25,35,75);
+}
+span.linea {
+    margin-top: 5px;
+    margin-bottom: 75px;
+    margin-left: 47.5%;
+    margin-right: 47.5%;
+    float: left;
+    width: 5%;
+    height: 0px;
+    border: 2px solid rgba(25,35,75,0.7);
+}
+@media screen and (max-width: 991px){
+	span.linea {
+		width: 15%;
+		margin-bottom: 15px;
+		margin-left: 42.5%;
+    	margin-right: 42.5%;
+    }
+}
+span.lineaBlanca {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 47.5%;
+    margin-right: 47.5%;
+    box-shadow: 2px 2px 3px #000;
+    float: left;
+    width: 5%;
+    height: 0px;
+    border: 2px solid #fff;
+}
+@media screen and (max-width: 991px){
+	span.lineaBlanca {
+		width: 15%;
+		margin-bottom: 15px;
+		margin-left: 42.5%;
+    	margin-right: 42.5%;
+    }
+}
+.tituloNoticias,
+.tituloLogin {
+    width: 100%;
+    height: 160px;
+    padding: 50px 0;
+}
+.tituloNoticias h1,
+.tituloLogin h1 {
+	margin:0px;
+}
+
+
 
 /* -- NAV -- */
 ul.navbar-nav {
@@ -75,16 +137,12 @@ ul.navbar-nav {
 	transform: rotate(-35deg);
 }
 
+
+
 /* -- INDEX -- */
 section.home {
 	background-image: url("../img/fondo.jpg");
 	background-size: cover;
-}
-h1 {
-	font-size: 60px;
-	color: #fff;
-	text-shadow: 2px 2px 3px #000;
-	margin-bottom: 20px;
 }
 .titulo > a {
 	background-color: rgb(25,35,75);
@@ -102,37 +160,17 @@ h1 {
 .titulo > a:hover {
 	background-color: rgb(50,71,151);
 }
-span.linea {
-    margin-top: 5px;
-    margin-bottom: 75px;
-    margin-left: 47.5%;
-    margin-right: 47.5%;
-    float: left;
-    width: 5%;
-    height: 0px;
-    border: 2px solid rgba(25,35,75,0.7);
-}
 @media screen and (max-width: 991px){
-	span.linea {
-		width: 15%;
-		margin-bottom: 15px;
-		margin-left: 42.5%;
-    	margin-right: 42.5%;
-    }
     span.finNoticia {
 		width: 100%;
 		margin-top: 20px;
-	   	border: 0.5px solid rgba(25,35,75,0.7);
+	   	border-bottom: 1px solid rgba(25,35,75,0.7);
     	height: 0px;
     	float: left;
     }
 }
 .noticias {
 	padding: 100px 0;
-}
-h2 {
-	font-size: 52px;
-	color: rgb(25,35,75);
 }
 .noticias a:hover,
 .noticias a:link {
@@ -221,6 +259,8 @@ a.masNoticias:hover {
 	font-size: 18px;
 }
 
+
+
 /* -- ALL NEWS -- */
 .allNews {
 	padding: 50px 0;
@@ -239,38 +279,6 @@ a.masNoticias:hover {
 	background-image: url("../img/carreras.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 160px;
-    padding: 50px 0;
-}
-.tituloNoticias span.linea {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 47.5%;
-    margin-right: 47.5%;
-    box-shadow: 2px 2px 3px #000;
-    float: left;
-    width: 5%;
-    height: 0px;
-    border: 2px solid #fff;
-}
-@media screen and (max-width: 991px){
-	.tituloNoticias span.linea {
-		width: 15%;
-		margin-bottom: 15px;
-		margin-left: 42.5%;
-    	margin-right: 42.5%;
-    }
-    .tituloNoticias span.finNoticia {
-		width: 100%;
-		margin-top: 20px;
-	   	border: 0.5px solid rgba(25,35,75,0.7);
-    	height: 0px;
-    	float: left;
-    }
-}
-.tituloNoticias h1 {
-	margin:0px;
 }
 .allNews h3 {
 	margin-top: 0;
@@ -286,6 +294,28 @@ a.masNoticias:hover {
 }
 .allNews .paginacion li a {
 	color:rgb(25,35,75);
+}
+
+
+
+/* -- LOGIN -- */
+form.login {
+	padding: 100px 0;
+}
+.tituloLogin {
+	background-color: rgb(25,35,75);
+}
+form.login label {
+	color: rgb(25,35,75);
+}
+.login input {
+	border-color: rgb(25,35,75);
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+	border-color: transparent;
+	box-shadow: 1px 1px 10px rgb(25,35,75), 
+				-1px -1px 10px rgb(25,35,75);
 }
 
 /* -- FOOTER -- */

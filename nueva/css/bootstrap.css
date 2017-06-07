@@ -3063,23 +3063,29 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 .btn-default {
-  color: #333333;
-  background-color: #ffffff;
-  border-color: #cccccc;
+  color: #fff;
+  background-color: rgb(25,35,75);
+  border-color: rgb(25,35,75);
+
+
 }
 .btn-default:focus,
 .btn-default.focus {
-  color: #333333;
-  background-color: #e6e6e6;
-  border-color: #8c8c8c;
+  color: rgb(25,35,75);
+  background-color: #ffffff;
+  border-color: rgb(25,35,75);
 }
 .btn-default:hover {
-  color: #333333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  color: rgb(25,35,75);
+  background-color: #ffffff;
+  border-color: rgb(25,35,75);
 }
 .btn-default:active,
-.btn-default.active,
+.btn-default.active {
+  color: rgb(25,35,75);
+  background-color: #ffffff;
+  border-color: rgb(25,35,75);
+}
 .open > .dropdown-toggle.btn-default {
   color: #333333;
   background-color: #e6e6e6;
@@ -4855,7 +4861,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
-  color: #ffffff;
+  color: rgb(25,35,75);
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
