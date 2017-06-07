@@ -243,7 +243,7 @@ a.masNoticias:hover {
     height: 160px;
     padding: 50px 0;
 }
-span.linea {
+.tituloNoticias span.linea {
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 47.5%;
@@ -255,13 +255,13 @@ span.linea {
     border: 2px solid #fff;
 }
 @media screen and (max-width: 991px){
-	span.linea {
+	.tituloNoticias span.linea {
 		width: 15%;
 		margin-bottom: 15px;
 		margin-left: 42.5%;
     	margin-right: 42.5%;
     }
-    span.finNoticia {
+    .tituloNoticias span.finNoticia {
 		width: 100%;
 		margin-top: 20px;
 	   	border: 0.5px solid rgba(25,35,75,0.7);
