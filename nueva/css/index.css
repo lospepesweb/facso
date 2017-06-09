@@ -144,21 +144,8 @@ section.home {
 	background-image: url("../img/fondo.jpg");
 	background-size: cover;
 }
-.titulo > a {
-	background-color: rgb(25,35,75);
-    
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-}
 .titulo > a:last-child {
 	margin-left: 20px;
-}
-.titulo > a:hover {
-	background-color: rgb(50,71,151);
 }
 @media screen and (max-width: 991px){
     span.finNoticia {
@@ -265,14 +252,14 @@ a.masNoticias:hover {
 .allNews {
 	padding: 50px 0;
 }
-.allNews a {
+a.botonTitulo {
 	color: rgb(25,35,75);
 }
-.allNews a:hover {
+a.botonTitulo:hover {
 	text-decoration: none;
 }
-.allNews a:link,
-.allNews a:active {
+a.botonTitulo:link,
+a.botonTitulo:active {
 	text-decoration: none;
 }
 .tituloNoticias {
@@ -298,6 +285,17 @@ a.masNoticias:hover {
 
 
 
+/* -- NOTICIAS PANEL -- */
+.botones {
+	padding: 50px 0;
+}
+
+
+
+
+
+
+
 /* -- LOGIN -- */
 form.login {
 	padding: 100px 0;
@@ -317,6 +315,8 @@ input[type="password"]:focus {
 	box-shadow: 1px 1px 10px rgb(25,35,75), 
 				-1px -1px 10px rgb(25,35,75);
 }
+
+
 
 /* -- FOOTER -- */
 footer {
